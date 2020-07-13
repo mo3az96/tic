@@ -1603,6 +1603,194 @@ html[dir='rtl'] .sub-ul {
   color: #1c9d4c;
 }
 
+.cart-pop {
+  position: absolute;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 12.61px 0.39px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 0px 12.61px 0.39px rgba(0, 0, 0, 0.09);
+  width: 370px;
+  max-width: calc(100vw - 30px);
+  z-index: 9;
+  top: 100%;
+  padding: 30px 10px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+html[dir='ltr'] .cart-pop {
+  right: 0;
+}
+
+html[dir='rtl'] .cart-pop {
+  left: 0;
+}
+
+.cart-count {
+  padding: 0 20px;
+  font-size: 16px;
+  color: #1c9d4c;
+  font-weight: bold;
+  margin-bottom: 28px;
+}
+
+.popcart-ul {
+  max-height: 285px;
+  overflow-y: auto;
+  padding: 0 20px;
+}
+
+.popcart-ul::-webkit-scrollbar {
+  background-color: #e5e5e5;
+  width: 7px;
+  height: 0px;
+}
+
+.popcart-ul::-webkit-scrollbar-thumb {
+  background-color: #1c9d4c;
+}
+
+.popcart-li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 19px;
+  margin-bottom: 17px;
+  border-bottom: 1px solid #d7d7d7;
+  position: relative;
+}
+
+.popcart-li .del-btn {
+  position: absolute;
+  top: 0;
+  fill: red;
+}
+
+html[dir='ltr'] .popcart-li .del-btn {
+  right: 0;
+}
+
+html[dir='rtl'] .popcart-li .del-btn {
+  left: 0;
+}
+
+.popcart-li .pop-img {
+  width: 71px;
+  height: 114px;
+  display: block;
+  overflow: hidden;
+}
+
+html[dir='ltr'] .popcart-li .pop-img {
+  margin-right: 20px;
+}
+
+html[dir='rtl'] .popcart-li .pop-img {
+  margin-left: 20px;
+}
+
+.popcart-li .pop-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.popcart-li .pop-img:hover img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.popcart-li .pop-info {
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.popcart-li .pop-name {
+  font-size: 16.591px;
+  font-weight: 500;
+  color: #2b2b2b;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  line-height: 1.176;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 6px;
+}
+
+.popcart-li .pop-name:hover, .popcart-li .pop-name:focus {
+  color: #1c9d4c;
+}
+
+.popcart-li .pop-qty {
+  color: #808080;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.popcart-li .pop-price {
+  color: #2b2b2b;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 15px;
+  display: block;
+}
+
+.pop-btns {
+  margin-top: 65px;
+  padding: 0 30px;
+}
+
+.pop-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 60px;
+  border-radius: 30px;
+  border: 1px solid #1c9d4c;
+  font-size: 18px;
+  font-weight: bold;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.pop-btn:first-of-type {
+  background-color: transparent;
+  color: #1c9d4c;
+  margin-bottom: 18px;
+}
+
+.pop-btn:last-of-type {
+  background-color: #1c9d4c;
+  color: #fff;
+}
+
+.pop-btn:hover, .pop-btn:focus {
+  background-color: #ff960d;
+  border-color: #ff960d;
+  color: #fff;
+}
+
 /*//////////////////////////////preloader//////////////////////////////*/
 .pre-loader {
   width: 100%;
@@ -1995,9 +2183,6 @@ html[dir='rtl'] .drop .drop-span::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.setting-cont {
   position: relative;
 }
 
@@ -2047,6 +2232,20 @@ html[dir='rtl'] .setting-cont.cart {
   }
 }
 
+.setting-cont:hover .setting-a {
+  fill: #1c9d4c;
+}
+
+.setting-cont:hover .count {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.setting-cont:hover .cart-pop {
+  visibility: visible;
+  opacity: 1;
+}
+
 .setting-a {
   position: relative;
   fill: #2b2b2b;
@@ -2063,11 +2262,6 @@ html[dir='rtl'] .setting-cont.cart {
 
 .setting-a:hover {
   fill: #1c9d4c;
-}
-
-.setting-a:hover .count {
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
 }
 
 .count {

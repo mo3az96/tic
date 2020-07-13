@@ -753,6 +753,9 @@ nav .mo-accordion.active:after {
   padding: 0 10px 17px;
   border-radius: 25px;
   overflow: hidden;
+  -webkit-box-shadow: 0px 10px 12.61px 0.39px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 10px 12.61px 0.39px rgba(0, 0, 0, 0.09);
+  z-index: 2;
 }
 
 .select2-dropdown .select2-search {
@@ -1503,6 +1506,16 @@ html[dir='rtl'] .product .sale-hint {
 
 .videos-slider {
   position: relative;
+}
+
+.videos-slider .swiper-pagination .swiper-pagination-bullet:hover {
+  opacity: 1;
+  background-color: #fff;
+}
+
+.videos-slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: #fff;
 }
 
 .big-menu {
@@ -2288,6 +2301,12 @@ html[dir='rtl'] .setting-cont.cart {
   position: absolute;
   top: 1px;
   left: 11px;
+}
+
+@media (max-width: 991px) {
+  .count {
+    padding-top: 4px;
+  }
 }
 
 .welcome {

@@ -20,23 +20,26 @@ $(document).ready(function () {
 
     new WOW().init();
     ///////// **nums** /////////
-    var a = 0;
-    $(window).scroll(function () {
-        if (a == 0 && $(this).scrollTop() >= ($(".state-cont").offset().top) - 500) {
-            $('.state-num span').each(function () {
-                $(this).prop('Counter', 0).animate({
-                    Counter: $(this).text()
-                }, {
-                    duration: 1000,
-                    easing: 'swing',
-                    step: function (now) {
-                        $(this).text(Math.ceil(now));
-                    }
+    if ($("div").hasClass("state-cont")) {
+        var a = 0;
+        $(window).scroll(function () {
+            if (a == 0 && $(this).scrollTop() >= ($(".state-cont").offset().top) - 500) {
+                $('.state-num span').each(function () {
+                    $(this).prop('Counter', 0).animate({
+                        Counter: $(this).text()
+                    }, {
+                        duration: 1000,
+                        easing: 'swing',
+                        step: function (now) {
+                            $(this).text(Math.ceil(now));
+                        }
+                    });
                 });
-            });
-            a++
-        }
-    });
+                a++
+            }
+        });
+    }
+
     ///////// **Select** /////////
     if ($(window).width() > 991) {
         $('.advanced-select').select2({});

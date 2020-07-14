@@ -843,7 +843,58 @@ html[dir='ltr'] .mobile-select-cont:after {
 }
 
 html[dir='rtl'] .mobile-select-cont:after {
-  left: 30p;
+  left: 30px;
+}
+
+.sort-select-cont {
+  height: auto;
+  margin: 0;
+  position: relative;
+}
+
+.sort-select-cont .select-sort {
+  font-size: 16px;
+  color: #9e9e9e;
+  font-weight: med;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  min-width: 77px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0 12px;
+}
+
+html[dir='ltr'] .sort-select-cont .select-sort {
+  padding-right: 20px;
+}
+
+html[dir='rtl'] .sort-select-cont .select-sort {
+  padding-left: 20px;
+}
+
+.sort-select-cont:after {
+  content: url(../images/arrow.png);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: 0;
+      -ms-flex-align: 0;
+          align-items: 0;
+  -webkit-filter: invert(70%) sepia(0%) saturate(499%) hue-rotate(214deg) brightness(90%) contrast(93%);
+          filter: invert(70%) sepia(0%) saturate(499%) hue-rotate(214deg) brightness(90%) contrast(93%);
+}
+
+html[dir='ltr'] .sort-select-cont:after {
+  right: 0;
+}
+
+html[dir='rtl'] .sort-select-cont:after {
+  left: 0;
 }
 
 .feats-cont {
@@ -1076,6 +1127,19 @@ html[dir='rtl'] .mobile-select-cont:after {
   .contact-head {
     font-size: 24px;
     margin-top: 70px;
+    margin-bottom: 25px;
+  }
+}
+
+.filter-head {
+  font-size: 20px;
+  color: #2b2b2b;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .filter-head {
     margin-bottom: 25px;
   }
 }
@@ -2983,6 +3047,135 @@ textarea.contact-input {
   }
 }
 
+.publishers-page {
+  margin-top: 35px;
+}
+
+@media (max-width: 767px) {
+  .side-fltrs {
+    margin-bottom: 50px;
+  }
+}
+
+.filter-item {
+  margin-bottom: 16px;
+}
+
+@media (max-width: 767px) {
+  .filter-item {
+    margin-bottom: 11px;
+  }
+}
+
+.filter-a {
+  color: #5e5e5e;
+  font-size: 17px;
+  font-weight: 500;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.filter-a:hover, .filter-a:focus {
+  color: #1c9d4c;
+}
+
+.filter-a.active {
+  color: #1c9d4c;
+}
+
+.publishers-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 50px 65px;
+}
+
+@media (max-width: 1199px) {
+  .publishers-grid {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .publishers-grid {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .publishers-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 25px 15px;
+  }
+}
+
+.publisher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.publisher .pub-img {
+  padding-bottom: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #e6e6e6;
+  margin-bottom: 15px;
+}
+
+.publisher .pub-img img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.publisher .pub-name {
+  font-size: 17px;
+  color: #2b2b2b;
+  font-weight: 500;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.publisher .pub-name:hover, .publisher .pub-name:focus {
+  color: #1c9d4c;
+}
+
+.sort-fltr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 991px) {
+  .sort-fltr {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 25px;
+  }
+}
+
+.sort-fltr label {
+  font-size: 16px;
+  color: #2b2b2b;
+  font-weight: bold;
+}
+
 .pageing {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3385,6 +3578,7 @@ html[dir='ltr'] .social-a:hover, html[dir='ltr'] .social-a:focus {
   background-color: #ff960d;
   position: fixed;
   bottom: 40px;
+  z-index: 99;
   cursor: pointer;
   display: none;
 }

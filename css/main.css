@@ -3454,6 +3454,12 @@ html[dir='rtl'] .side-search {
   margin-bottom: 70px;
 }
 
+@media (max-width: 991px) {
+  .side-list-cont {
+    margin-bottom: 40px;
+  }
+}
+
 .side-list-cont::-webkit-scrollbar {
   background-color: #e5e5e5;
   width: 7px;
@@ -3484,7 +3490,15 @@ html[dir='rtl'] .side-list-cont {
           box-shadow: none;
   height: 12px;
   padding: 0;
+  width: 90%;
+  margin: auto;
   margin-top: 40px;
+}
+
+@media (max-width: 991px) {
+  .noUi-target {
+    margin-bottom: 100px;
+  }
 }
 
 .noUi-connect {

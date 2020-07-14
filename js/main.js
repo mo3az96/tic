@@ -310,4 +310,39 @@ $(document).ready(function () {
             $(this).parent().parent().removeClass("product-checked")
         }
     });
+
+
+
+
+
+
+
+    if ($('div').hasClass("slider")) {
+        var slider = document.getElementById('slider');
+        var Max = slider.getAttribute("maxValue");
+        var Min = slider.getAttribute("minValue");
+        noUiSlider.create(slider, {
+            start: [Min, Max],
+            connect: true,
+            tooltips: [true, true],
+            format: {
+                from: Number,
+                to: function (value) {
+
+                    if (document.dir == 'rtl') {
+                        return (parseInt(value) + "<span>ريال </span>");
+                    } else {
+                        return (parseInt(value) + "<span> SAR</span>");
+                    }
+
+                }
+            },
+            range: {
+                'min': 0,
+                'max': 500
+            }
+        });
+    }
+
+
 });

@@ -312,6 +312,14 @@ $(document).ready(function () {
         $(".mo-accordion").not(this).parent().find(".mo-panel").slideUp(500);
     })
 
+
+    $('.collapse').on('show.bs.collapse', function () {
+        $(this).siblings('div').addClass('active');
+    });
+
+    $('.collapse').on('hide.bs.collapse', function () {
+        $(this).siblings('div').removeClass('active');
+    });
     ///////// **check box** /////////
     $('.product-check input').change(function () {
         if ($(this).is(':checked')) {

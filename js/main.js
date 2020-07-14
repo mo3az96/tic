@@ -302,4 +302,12 @@ $(document).ready(function () {
         }
         $(".mo-accordion").not(this).parent().find(".mo-panel").slideUp(500);
     })
+
+    $('.product-check input').change(function () {
+        if ($(this).is(':checked')) {
+            $(this).parent().parent().addClass("product-checked")
+        } else {
+            $(this).parent().parent().removeClass("product-checked")
+        }
+    });
 });

@@ -3336,7 +3336,7 @@ html[dir='rtl'] .setting-cont.cart {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 30px;
-  margin-bottom: 65px;
+  margin-bottom: 45px;
 }
 
 @media (max-width: 991px) {
@@ -3555,6 +3555,7 @@ html[dir='rtl'] .setting-cont.cart {
 
 .advanced-btn:hover, .advanced-btn:focus {
   background-color: transparent;
+  color: #fff;
 }
 
 .blogPage-grid {
@@ -4271,8 +4272,8 @@ html[dir='rtl'] .custom-check .select-text {
   position: absolute;
   top: 10px;
   z-index: 5;
-  visibility: hidden;
-  opacity: 0;
+  visibility: visible;
+  opacity: 1;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }

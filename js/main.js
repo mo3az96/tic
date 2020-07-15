@@ -52,11 +52,21 @@ $(document).ready(function () {
     ///////// **Select** /////////
     if ($(window).width() > 991) {
         $('.advanced-select').select2({});
+        $('.country-select').select2({
+            minimumResultsForSearch: Infinity,
+            dropdownParent: $('#biling-country')
+        });
+        $('.city-select').select2({
+            minimumResultsForSearch: Infinity,
+            dropdownParent: $('#biling-city')
+        });
     }
 
     if ($(window).width() <= 991) {
         $(".advanced-select").addClass("mobile-select");
         $(".advanced-select").wrap('<div class="mobile-select-cont"></div>');
+        $(".bil-select").addClass("mobile-bil");
+        $(".bil-select").wrap('<div class="mobile-bil-cont"></div>');
     }
 
     ///////// **feats Slider** /////////

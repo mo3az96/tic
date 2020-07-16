@@ -6949,8 +6949,13 @@ html[dir='ltr'] .social-a:hover, html[dir='ltr'] .social-a:focus {
   padding: 24px 0 23px;
 }
 
-.copyrights span {
+.copyrights a {
   color: #fff;
+  text-decoration: none;
+}
+
+.copyrights a:hover, .copyrights a:focus {
+  color: #1c9d4c;
 }
 
 .copyrights br {
@@ -7256,7 +7261,7 @@ html[dir='rtl'] .menu-close {
 }
 
 .menu-btn span {
-  padding-top: 2px;
+  padding-top: 5px;
 }
 
 html[dir='ltr'] .menu-btn span {

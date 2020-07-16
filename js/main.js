@@ -304,6 +304,12 @@ $(document).ready(function () {
             $("body").toggleClass("overflow");
         });
     }
+    ///////// **fltrs** /////////
+    if ($(window).width() <= 991) {
+        $('.fltr-btn').click(function () {
+            $(".side-fltrs").toggleClass("open");
+        });
+    }
     ///////// **footer** /////////
     if ($(window).width() <= 991) {
         $(".footer-head").addClass("mo-accordion");

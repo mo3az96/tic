@@ -2125,6 +2125,12 @@ html[dir='rtl'] .sub-display {
   background-color: #1c9d4c;
 }
 
+@media (max-width: 1199px) {
+  .sub-display {
+    overflow-y: hidden;
+  }
+}
+
 .sub-ul {
   height: -webkit-max-content;
   height: -moz-max-content;

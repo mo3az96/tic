@@ -1064,6 +1064,12 @@ html[dir='rtl'] .mobile-bil-cont:after {
   left: 30px;
 }
 
+@media (max-width: 991px) {
+  select {
+    background-color: #fff !important;
+  }
+}
+
 .feats-cont {
   border-top: 1px solid #f0f0f0;
   border-bottom: 1px solid #f0f0f0;

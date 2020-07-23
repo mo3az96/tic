@@ -52,13 +52,22 @@ $(document).ready(function () {
     ///////// **Select** /////////
     if ($(window).width() > 991) {
         $('.advanced-select').select2({});
-        $('.country-select').select2({
+        $('.bil-select.country-select').select2({
             minimumResultsForSearch: Infinity,
             dropdownParent: $('#biling-country')
         });
-        $('.city-select').select2({
+        $('.bil-select.city-select').select2({
             minimumResultsForSearch: Infinity,
             dropdownParent: $('#biling-city')
+        });
+
+        $('.log-select.country-select').select2({
+            minimumResultsForSearch: Infinity,
+            dropdownParent: $('#log-country')
+        });
+        $('.log-select.city-select').select2({
+            minimumResultsForSearch: Infinity,
+            dropdownParent: $('#log-city')
         });
     }
 
@@ -67,6 +76,8 @@ $(document).ready(function () {
         $(".advanced-select").wrap('<div class="mobile-select-cont"></div>');
         $(".bil-select").addClass("mobile-bil");
         $(".bil-select").wrap('<div class="mobile-bil-cont"></div>');
+        $(".log-select").addClass("mobile-log");
+        $(".log-select").wrap('<div class="mobile-log-cont"></div>');
     }
 
     ///////// **feats Slider** /////////

@@ -5467,6 +5467,12 @@ html[dir='rtl'] .reviews-summ .mo-rating i:last-of-type {
   padding: 27px 19px;
 }
 
+@media (max-width: 991px) {
+  .cart-options {
+    margin-top: 40px;
+  }
+}
+
 .cart-options .opt-title {
   text-align: center;
   font-size: 17px;

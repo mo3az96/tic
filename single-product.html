@@ -627,17 +627,15 @@
                             Rent or Buy eTextbook
                         </h4>
                         <div class="opt-radios">
-                            <div class="opt-radio">
-                                <input type="radio" name="opt" checked>
-                                <span class="opt-text">
+                            <div class="opt-radio active">
+                                <a class="opt-text fixall" data-toggle="tab" href="#opt1">
                                     <span> 1 Year</span>
-                                </span>
+                                </a>
                             </div>
                             <div class="opt-radio">
-                                <input type="radio" name="opt">
-                                <span class="opt-text">
+                                <a class="opt-text fixall" data-toggle="tab" href="#opt2">
                                     <span>Lifetime</span>
-                                </span>
+                                </a>
                             </div>
                         </div>
                         <div class="compare-cont">
@@ -645,13 +643,26 @@
                                 Compare Options
                             </span>
                         </div>
-                        <div class="summ">
-                            <p class="expire fixall">
-                                Expires on Sep 12, 2021
-                            </p>
-                            <h2 class="price fixall">244 SAR</h2>
+                        <div class="tab-content">
+                            <div id="opt1" class="tab-pane fade in active">
+                                <div class="summ">
+                                    <p class="expire fixall">
+                                        Expires on Sep 12, 2021
+                                    </p>
+                                    <h2 class="price fixall">244 SAR</h2>
+                                </div>
+                                <a href="cart.html" class="single-add-to-cart fixall">ADD TO CART</a>
+                            </div>
+                            <div id="opt2" class="tab-pane fade">
+                                <div class="summ">
+                                    <p class="expire fixall">
+                                        Lifetime
+                                    </p>
+                                    <h2 class="price fixall">500 SAR</h2>
+                                </div>
+                                <a href="cart.html" class="single-add-to-cart fixall">ADD TO CART</a>
+                            </div>
                         </div>
-                        <a href="cart.html" class="single-add-to-cart fixall">ADD TO CART</a>
                     </div>
                 </div>
             </div>

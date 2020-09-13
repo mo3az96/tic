@@ -613,24 +613,21 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-4">
                     <div class="cart-options">
                         <h4 class="opt-title fixall">
                             استئجار أو شراء كتاب دراسي إلكتروني
                         </h4>
                         <div class="opt-radios">
-                            <div class="opt-radio">
-                                <input type="radio" name="opt" checked>
-                                <span class="opt-text">
+                            <div class="opt-radio active">
+                                <a class="opt-text fixall" data-toggle="tab" href="#opt1">
                                     <span> سنة واحدة</span>
-                                </span>
+                                </a>
                             </div>
                             <div class="opt-radio">
-                                <input type="radio" name="opt">
-                                <span class="opt-text">
+                                <a class="opt-text fixall" data-toggle="tab" href="#opt2">
                                     <span>مدى الحياة</span>
-                                </span>
+                                </a>
                             </div>
                         </div>
                         <div class="compare-cont">
@@ -638,13 +635,26 @@
                                 قارن الخيارات
                             </span>
                         </div>
-                        <div class="summ">
-                            <p class="expire fixall">
-                                تنتهي في 12 سبتمبر 2021
-                            </p>
-                            <h2 class="price fixall">244 ريال </h2>
+                        <div class="tab-content">
+                            <div id="opt1" class="tab-pane fade in active">
+                                <div class="summ">
+                                    <p class="expire fixall">
+                                        تنتهي في 12 سبتمبر 2021
+                                    </p>
+                                    <h2 class="price fixall">244 ريال</h2>
+                                </div>
+                                <a href="cart.html" class="single-add-to-cart fixall">ADD TO CART</a>
+                            </div>
+                            <div id="opt2" class="tab-pane fade">
+                                <div class="summ">
+                                    <p class="expire fixall">
+                                        مدى الحياة
+                                    </p>
+                                    <h2 class="price fixall">500 ريال</h2>
+                                </div>
+                                <a href="cart-ar.html" class="single-add-to-cart fixall">تنتهي في 12 سبتمبر 2021</a>
+                            </div>
                         </div>
-                        <a href="cart.html" class="single-add-to-cart fixall">أضف إلى السلة</a>
                     </div>
                 </div>
             </div>
@@ -734,7 +744,6 @@
                 </div>
             </div>
         </div>
-        <a href="cart.html" class="single-add-to-cart fixall xs-cart">أضف إلى السلة</a>
     </div>
 
 

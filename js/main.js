@@ -431,4 +431,17 @@ $(document).ready(function () {
         $parentElm.find(".qty-input").val(value);
     });
 
+
+    $(".input-ico .icon").on('click', function () {
+        var input = $(this).siblings(input);
+        $(this).toggleClass("active")
+
+        if (input.attr("type") == "password") {
+            input.attr("type", "text");
+        } else {
+            input.attr("type", "password");
+        }
+    });
+
+
 });

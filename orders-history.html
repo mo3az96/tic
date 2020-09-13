@@ -1,0 +1,777 @@
+<!DOCTYPE HTML>
+<HTML dir="ltr" lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+    <title>TICBOOK</title>
+    <link rel='shortcut icon' type='img/png' href='images/fav.png' />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/Linearicons.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="css/bootstrap-rtl.min.css" /> -->
+    <link rel="stylesheet" href="css/select2.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/nouislider.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="overflow">
+    <!-- Start preloader -->
+    <div class="pre-loader">
+        <div class="content"><img src="images/logo.png" alt="logo" />
+            <div class="progress-bar"><span class="bar"><span class="progress"></span></span></div>
+        </div>
+    </div>
+    <!-- End preloader -->
+
+    <!-- Start Header -->
+    <header>
+        <div class="container">
+            <div class="header">
+                <a href="index.html" class="logo"><img class="img-responsive" src="images/logo.png"></a>
+                <div class="search-cont">
+                    <span class="search-close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                            <path id="Union_6" data-name="Union 6"
+                                d="M1587-1988.714l-7.714,7.714-1.286-1.286,7.715-7.714-7.715-7.714,1.286-1.286,7.714,7.714,7.714-7.714,1.286,1.286-7.715,7.714,7.715,7.714-1.286,1.286Z"
+                                transform="translate(-1578 1999)" />
+                        </svg>
+                    </span>
+                    <form class="search-form">
+                        <input type="text" class="search-input fixall" placeholder="Search for book">
+
+                        <a href="result.html" class="search-btn fixall">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19">
+                                <path id="Search-icon"
+                                    d="M486.5,87.4a7.473,7.473,0,0,0,1.926-5.014,7.216,7.216,0,1,0-7.214,7.388,7.071,7.071,0,0,0,4.32-1.471L490.9,93.8a0.639,0.639,0,0,0,.457.2,0.621,0.621,0,0,0,.457-0.2,0.692,0.692,0,0,0,0-.947Zm-11.2-5.014a5.91,5.91,0,1,1,5.908,6.051A5.986,5.986,0,0,1,475.306,82.388Z"
+                                    transform="translate(-474 -75)" />
+                            </svg>
+                        </a>
+                    </form>
+                </div>
+
+                <div class="user-settings">
+
+                    <div class="drops">
+                        <div class="drop lang country-drop">
+                            <span class="drop-span">English</span>
+                            <ul class="drop-ul list-unstyled fixall">
+                                <li class="drop-li">
+                                    <a href="orders-history.html" class="drop-a fixall">English</a>
+                                </li>
+                                <li class="drop-li">
+                                    <a href="orders-history-ar.html" class="drop-a fixall">العربية</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="drop curr country-drop">
+                            <span class="drop-span">SAR</span>
+                            <ul class="drop-ul list-unstyled fixall">
+                                <li class="drop-li">
+                                    <a href="#!" class="drop-a fixall">SAR</a>
+                                </li>
+                                <li class="drop-li">
+                                    <a href="#!" class="drop-a fixall">AED</a>
+                                </li>
+                                <li class="drop-li">
+                                    <a href="#!" class="drop-a fixall">USD</a>
+                                </li>
+                                <li class="drop-li">
+                                    <a href="#!" class="drop-a fixall">EUR</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="setting-nav">
+                        <div class="setting-cont cart">
+                            <a href="#!" class="setting-a fixall ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="23" viewBox="0 0 30 23">
+                                    <path id="Cart-icon"
+                                        d="M1161,72.674a0.675,0.675,0,0,0,.68.675h5.2l1.2,4.784a2.7,2.7,0,0,0-.03.4,0.636,0.636,0,0,0,.01.137l1.66,9.027c0.01,0.03.01,0.064,0.02,0.093,0.22,0.659.69,2.087,1.98,2.457a2.949,2.949,0,0,0-.59,1.77A2.987,2.987,0,0,0,1174.12,95a3.041,3.041,0,0,0,2.99-3.043,3.817,3.817,0,0,0-.52-1.741h6.22a3.7,3.7,0,0,0-.52,1.742,3.014,3.014,0,0,0,2.99,3.01A2.971,2.971,0,0,0,1188.26,92a2.939,2.939,0,0,0-.59-1.77,3.188,3.188,0,0,0,1.97-2.467,0.258,0.258,0,0,0,.02-0.086l1.33-9.017A0.88,0.88,0,0,0,1191,78.5a2.792,2.792,0,0,0-2.67-2.793h-17.61a2.706,2.706,0,0,0-1.69.694l-0.96-3.864a0.714,0.714,0,0,0-.66-0.541h-5.73A0.675,0.675,0,0,0,1161,72.674Zm13.12,20.977a1.63,1.63,0,1,1,1.63-1.629A1.631,1.631,0,0,1,1174.12,93.651Zm11.16,0a1.63,1.63,0,1,1,1.63-1.629A1.639,1.639,0,0,1,1185.28,93.651Zm-14.56-16.591h17.61a1.435,1.435,0,0,1,1.32,1.4l-1.32,8.886c-0.21.718-.61,1.52-1.33,1.52h-14.62c-0.5,0-.9-0.2-1.34-1.512l-1.64-8.873a1.175,1.175,0,0,1,.03-0.188c0-.022.01-0.1,0.01-0.121A1.4,1.4,0,0,1,1170.72,77.059Z"
+                                        transform="translate(-1161 -72)" />
+                                </svg>
+                                <span class="count">3</span>
+                            </a>
+                            <div class="cart-pop">
+                                <h6 class="cart-count fixall">You have <span>3</span> items in your cart</h6>
+                                <ul class="popcart-ul fixall list-unstyled">
+                                    <li class="popcart-li">
+                                        <a href="product.html" class="pop-img"><img src="images/pro1.jpg"
+                                                class="img-responsive"></a>
+                                        <div class="pop-info">
+                                            <a href="product.html" class="pop-name fixall"> Book Name Book Name Book
+                                                Name</a>
+                                            <span class="pop-qty">QTY : 2</span>
+                                            <span class="pop-price">153.33 SAR</span>
+                                        </div>
+                                        <a href="#!" class="del-btn fixall">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                viewBox="0 0 14 14">
+                                                <path id="close-icon"
+                                                    d="M1253.91,206.53l-13.38,13.376a0.312,0.312,0,0,1-.44,0,0.3,0.3,0,0,1,0-.442l13.38-13.376a0.31,0.31,0,0,1,.44,0A0.316,0.316,0,0,1,1253.91,206.53Zm0,13.376a0.312,0.312,0,0,1-.44,0l-13.38-13.376a0.3,0.3,0,0,1,0-.442,0.31,0.31,0,0,1,.44,0l13.38,13.376A0.316,0.316,0,0,1,1253.91,219.906Z"
+                                                    transform="translate(-1240 -206)" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="popcart-li">
+                                        <a href="product.html" class="pop-img"><img src="images/pro2.jpg"
+                                                class="img-responsive"></a>
+                                        <div class="pop-info">
+                                            <a href="product.html" class="pop-name fixall"> Book Name</a>
+                                            <span class="pop-qty">QTY : 2</span>
+                                            <span class="pop-price">153.33 SAR</span>
+                                        </div>
+                                        <a href="#!" class="del-btn fixall">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                viewBox="0 0 14 14">
+                                                <path id="close-icon"
+                                                    d="M1253.91,206.53l-13.38,13.376a0.312,0.312,0,0,1-.44,0,0.3,0.3,0,0,1,0-.442l13.38-13.376a0.31,0.31,0,0,1,.44,0A0.316,0.316,0,0,1,1253.91,206.53Zm0,13.376a0.312,0.312,0,0,1-.44,0l-13.38-13.376a0.3,0.3,0,0,1,0-.442,0.31,0.31,0,0,1,.44,0l13.38,13.376A0.316,0.316,0,0,1,1253.91,219.906Z"
+                                                    transform="translate(-1240 -206)" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="popcart-li">
+                                        <a href="product.html" class="pop-img"><img src="images/pro3.jpg"
+                                                class="img-responsive"></a>
+                                        <div class="pop-info">
+                                            <a href="product.html" class="pop-name fixall"> Book Name</a>
+                                            <span class="pop-qty">QTY : 2</span>
+                                            <span class="pop-price">153.33 SAR</span>
+                                        </div>
+                                        <a href="#!" class="del-btn fixall">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                viewBox="0 0 14 14">
+                                                <path id="close-icon"
+                                                    d="M1253.91,206.53l-13.38,13.376a0.312,0.312,0,0,1-.44,0,0.3,0.3,0,0,1,0-.442l13.38-13.376a0.31,0.31,0,0,1,.44,0A0.316,0.316,0,0,1,1253.91,206.53Zm0,13.376a0.312,0.312,0,0,1-.44,0l-13.38-13.376a0.3,0.3,0,0,1,0-.442,0.31,0.31,0,0,1,.44,0l13.38,13.376A0.316,0.316,0,0,1,1253.91,219.906Z"
+                                                    transform="translate(-1240 -206)" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="pop-btns">
+                                    <a href="cart.html" class="pop-btn fixall">VIEW CART</a>
+                                    <a href="check.html" class="pop-btn fixall">CHECKOUT</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setting-cont heart">
+                            <a href="#!" class="setting-a fixall">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23">
+                                    <path id="wishlist-icon"
+                                        d="M1233.75,72c-2.6,0-4.57,1.494-6.25,3.056A8.729,8.729,0,0,0,1221.25,72a6.333,6.333,0,0,0-6.25,6.446,7.38,7.38,0,0,0,1.58,4.323l9.72,11.388c1.09,1.129,1.29,1.129,2.38,0l9.74-11.388a6.557,6.557,0,0,0,1.58-4.323A6.333,6.333,0,0,0,1233.75,72Zm3.13,10.453L1227.5,93.39,1218.12,82.4a6.183,6.183,0,0,1-1.56-3.962,4.844,4.844,0,0,1,4.69-5.013c2.28-.019,4.86,2.256,6.25,3.972,1.35-1.656,3.97-3.972,6.25-3.972a4.877,4.877,0,0,1,4.69,5.013A5.78,5.78,0,0,1,1236.88,82.45Z"
+                                        transform="translate(-1215 -72)" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="setting-cont user drop">
+                            <a href="#!" class="setting-a fixall">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23">
+                                    <path id="account-icon"
+                                        d="M1279.99,86.115a7.83,7.83,0,0,0,3.1-6.209,8.092,8.092,0,0,0-16.18,0,7.83,7.83,0,0,0,3.1,6.209A10.753,10.753,0,0,0,1264,95h1.47a9.387,9.387,0,0,1,6.04-7.971,8.158,8.158,0,0,0,6.98,0A9.387,9.387,0,0,1,1284.53,95H1286A10.753,10.753,0,0,0,1279.99,86.115Zm-4.99.26a6.47,6.47,0,1,1,6.62-6.469A6.549,6.549,0,0,1,1275,86.374Z"
+                                        transform="translate(-1264 -72)" />
+                                </svg>
+                            </a>
+                            <ul class="drop-ul list-unstyled fixall">
+                                <li class="drop-li">
+                                    <a href="log.html" class="drop-a fixall">Login</a>
+                                </li>
+                                <li class="drop-li">
+                                    <a href="reg.html" class="drop-a fixall">Register</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="setting-cont search-icon">
+                            <a href="#!" class="setting-a fixall">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21.8" height="23" viewBox="0 0 18 19">
+                                    <path id="Search-icon"
+                                        d="M486.5,87.4a7.473,7.473,0,0,0,1.926-5.014,7.216,7.216,0,1,0-7.214,7.388,7.071,7.071,0,0,0,4.32-1.471L490.9,93.8a0.639,0.639,0,0,0,.457.2,0.621,0.621,0,0,0,.457-0.2,0.692,0.692,0,0,0,0-.947Zm-11.2-5.014a5.91,5.91,0,1,1,5.908,6.051A5.986,5.986,0,0,1,475.306,82.388Z"
+                                        transform="translate(-474 -75)" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Start Navbar -->
+        <nav>
+            <div class="container">
+                <div class="nav-cont">
+                    <span class="menu-close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                            <path id="Union_6" data-name="Union 6"
+                                d="M1587-1988.714l-7.714,7.714-1.286-1.286,7.715-7.714-7.715-7.714,1.286-1.286,7.714,7.714,7.714-7.714,1.286,1.286-7.715,7.714,7.715,7.714-1.286,1.286Z"
+                                transform="translate(-1578 1999)" />
+                        </svg>
+                    </span>
+                    <ul class="mo-navbar fixall list-unstyled">
+                        <li class="nav-li">
+                            <a href="index.html" class="nav-a fixall ">Home</a>
+                        </li>
+                        <li class="nav-li sub-link big-menu">
+                            <a href="#!" class="nav-a fixall">Universities</a>
+                            <div class="sub-overflow">
+                                <div class="sub-display">
+                                    <ul class="sub-ul list-unstyled fixall">
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">King Saud University</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Princess Nora bint Abdul Rahman
+                                                University</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Imam Muhammad bin Saud Islamic
+                                                University</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Prince Sultan University</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">College of Telecom & Information</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Arab Open University</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Riyadh College of Dentistry and
+                                                Pharmacy</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Al Yamamah University</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Dar Al-Hekma College</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Fakeeh College for Medical Sciences</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">College of Business Administration
+                                                (CBA)</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Dar Al Uloom University</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">King Saud bin Abdulaziz University for
+                                                Health Sciences</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Alfaisal University</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Arab East Colleges</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Almaarefa University</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Prince Sattam Bin Abdulaziz University</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Al Farabi College of Dentistry and
+                                                Nursing</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Technical Trainers College</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Prince Sultan Aviation Academy</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Taif University</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Taif College of Technology</a>
+                                        </li>
+
+                                    </ul>
+                                    <ul class="sub-ul list-unstyled fixall">
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Dar Al Uloom University</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">King Saud bin Abdulaziz University for
+                                                Health Sciences</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Alfaisal University</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Arab East Colleges</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Almaarefa University</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Prince Sattam Bin Abdulaziz University</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Al Farabi College of Dentistry and
+                                                Nursing</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Technical Trainers College</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Prince Sultan Aviation Academy</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Taif University</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Taif College of Technology</a>
+                                        </li>
+
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Majmaah University</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Shaqra University</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Saudi Electronic University</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">King Abdulaziz University</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Umm Al-Qura University</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Leadership Community College</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Jeddah College of Technology</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Effat University</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Batterjee Medical College</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Arab Open University</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Prince Sultan College For Tourism and
+                                                Business</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="sub-ul list-unstyled fixall">
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Majmaah University</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Shaqra University</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Saudi Electronic University</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">King Abdulaziz University</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Umm Al-Qura University</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Leadership Community College</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Jeddah College of Technology</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Effat University</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Batterjee Medical College</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Arab Open University</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">Prince Sultan College For Tourism and
+                                                Business</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-li sub-link">
+                            <a href="#!" class="nav-a fixall">Publishers</a>
+
+                            <div class="sub-overflow">
+                                <div class="sub-display">
+                                    <ul class="sub-ul list-unstyled fixall">
+                                        <li class="sub-li">
+                                            <a href="publishers.html" class="sub-a fixall">Arab publishers</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="publishers.html" class="sub-a fixall">English publishers</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-li sub-link">
+                            <a href="#!" class="nav-a fixall">Products</a>
+                            <div class="sub-overflow">
+                                <div class="sub-display">
+                                    <ul class="sub-ul list-unstyled fixall">
+                                        <li class="sub-li">
+                                            <a href="products.html" class="sub-a fixall">E-Books</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="products.html" class="sub-a fixall">E-Text Books</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="products.html" class="sub-a fixall">Educational Books</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="products.html" class="sub-a fixall">Educational Materials</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-li">
+                            <span class="hint-tip">Faculty Members</span>
+                            <a href="subjects.html" class="nav-a fixall">Browse Subjects</a>
+                        </li>
+                        <li class="nav-li">
+                            <a href="#!" class="nav-a fixall">Sale</a>
+                        </li>
+                        <li class="nav-li">
+                            <a href="#!" class="nav-a fixall">Video Gallery</a>
+                        </li>
+                        <li class="nav-li">
+                            <a href="blog.html" class="nav-a fixall">Blog</a>
+                        </li>
+                        <li class="nav-li xs-nav">
+                            <div class="drop lang country-drop">
+                                <span class="drop-span">English</span>
+                                <ul class="drop-ul list-unstyled fixall">
+                                    <li class="drop-li">
+                                        <a href="orders-history.html" class="drop-a fixall">English</a>
+                                    </li>
+                                    <li class="drop-li">
+                                        <a href="orders-history-ar.html" class="drop-a fixall">العربية</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-li xs-nav">
+                            <div class="drop curr country-drop">
+                                <span class="drop-span">SAR</span>
+                                <ul class="drop-ul list-unstyled fixall">
+                                    <li class="drop-li">
+                                        <a href="#!" class="drop-a fixall">SAR</a>
+                                    </li>
+                                    <li class="drop-li">
+                                        <a href="#!" class="drop-a fixall">AED</a>
+                                    </li>
+                                    <li class="drop-li">
+                                        <a href="#!" class="drop-a fixall">USD</a>
+                                    </li>
+                                    <li class="drop-li">
+                                        <a href="#!" class="drop-a fixall">EUR</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-li">
+                            <a href="contact.html" class="nav-a fixall">Need Help?</a>
+                        </li>
+                    </ul>
+                    <div class="hotline-cont">
+                        <img src="images/phone.png" class="img-responsive">
+                        <span class="hot-text">Hotline </span>
+                        <a href="tel:92000000" class="hot-num fixall">92000000</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+
+        <div class="menu-div">
+            <div class="menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19.404" height="14" viewBox="0 0 19.404 14">
+                    <path id="Union_2" data-name="Union 2" d="M1578,21V19h19.4v2Zm0-6V13h19.4v2Zm0-6V7h19.4V9Z"
+                        transform="translate(-1578 -7)" />
+                </svg>
+                <span class="menu-text">Main Menu</span>
+            </div>
+            <div class="hotline-cont">
+                <img src="images/phone.png" class="img-responsive">
+                <a href="tel:92000000" class="hot-num fixall">92000000</a>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Breadcrumb -->
+    <div class="mo-breadcrumb-cont container">
+        <ul class="mo-breadcrumb fixall list-unstyled">
+            <li class="bread-li">
+                <a href="index.html" class="bread-a fixall">Home</a>
+            </li>
+            <li class="bread-li active">
+                <a href="#!" class="bread-a fixall">Orders History</a>
+            </li>
+        </ul>
+    </div>
+    <!-- End Breadcrumb -->
+
+    <!-- Start Orders History page -->
+    <div class="history-page">
+        <div class="container">
+            <h1 class="history-head fixall">Orders History</h1>
+
+            <div class="table-responsive">
+                <table class="history-table">
+                    <tr>
+                        <th class="history-date">Date</th>
+                        <th class="history-ID">ID</th>
+                        <th class="history-stat">Status</th>
+                        <th class="history-No">No. of Products</th>
+                        <th class="history-tot">Total</th>
+                        <th class="history-view">View</th>
+                    </tr>
+                    <tr>
+                        <td class="history-date">
+                            12/09/2020
+                        </td>
+                        <td class="history-ID">
+                            #123
+                        </td>
+                        <td class="history-stat">
+                            Pending
+                        </td>
+                        <td class="history-No">
+                            5
+                        </td>
+                        <td class="history-tot">
+                            1220 SAR
+                        </td>
+                        <td class="history-view">
+                            <a href="order-details.html" class="view-eye fixall">
+                                <span class="lnr lnr-eye"></span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="history-date">
+                            12/09/2020
+                        </td>
+                        <td class="history-ID">
+                            #123
+                        </td>
+                        <td class="history-stat">
+                            Pending
+                        </td>
+                        <td class="history-No">
+                            5
+                        </td>
+                        <td class="history-tot">
+                            1220 SAR
+                        </td>
+                        <td class="history-view">
+                            <a href="order-details.html" class="view-eye fixall">
+                                <span class="lnr lnr-eye"></span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="history-date">
+                            12/09/2020
+                        </td>
+                        <td class="history-ID">
+                            #123
+                        </td>
+                        <td class="history-stat">
+                            Pending
+                        </td>
+                        <td class="history-No">
+                            5
+                        </td>
+                        <td class="history-tot">
+                            1220 SAR
+                        </td>
+                        <td class="history-view">
+                            <a href="order-details.html" class="view-eye fixall">
+                                <span class="lnr lnr-eye"></span>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- End Orders History page -->
+
+    <!-- Start Newsletter -->
+    <div class="news-cont">
+        <div class="container">
+            <div class="newsletter">
+                <h3 class="news-head fixall wow fadeInUp">
+                    GET SPECIAL OFFER IN YOUR INBOX
+                </h3>
+                <form class="news-form">
+                    <input type="email" class="news-input fixall wow fadeInUp" data-wow-delay="0.2s"
+                        placeholder="Enter your email address here">
+                    <button type="submit" class="news-btn fixall wow fadeInUp" data-wow-delay="0.4s">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End Newsletter -->
+
+    <!-- Start Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="about-footer wow fadeInUp">
+                            <div class="footer-logo"><img src="images/footer-logo.png" class="img-responsive"></div>
+                            <p class="about-desc fixall">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut
+                                laoreet dolore.
+                            </p>
+                            <a href="#!" class="about-more fixall">Read more about us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="nav-foot-cont wow fadeInUp" data-wow-delay="0.15s">
+                            <h4 class="footer-head nav-foot-header fixall">Quick Links</h4>
+                            <div class="nav-foot">
+                                <ul class="foot-ul list-unstyled fixall">
+                                    <li class="foot-li">
+                                        <a href="publishers.html" class="foot-a fixall">Publishers</a>
+                                    </li>
+                                    <li class="foot-li">
+                                        <a href="products.html" class="foot-a fixall">Products</a>
+                                    </li>
+                                    <li class="foot-li">
+                                        <a href="#!" class="foot-a fixall">Universities</a>
+                                    </li>
+                                    <li class="foot-li">
+                                        <a href="subjects.html" class="foot-a fixall">Browse Subjects</a>
+                                    </li>
+                                </ul>
+                                <ul class="foot-ul list-unstyled fixall">
+                                    <li class="foot-li">
+                                        <a href="#!" class="foot-a fixall">Sale</a>
+                                    </li>
+                                    <li class="foot-li">
+                                        <a href="blog.html" class="foot-a fixall">Blog</a>
+                                    </li>
+                                    <li class="foot-li">
+                                        <a href="#!" class="foot-a fixall">Video Gallery</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="nav-foot-cont wow fadeInUp" data-wow-delay="0.3s">
+                            <h4 class="footer-head nav-foot-header fixall">Information</h4>
+                            <div class="nav-foot">
+                                <ul class="foot-ul list-unstyled fixall">
+                                    <li class="foot-li">
+                                        <a href="#!" class="foot-a fixall">About us</a>
+                                    </li>
+                                    <li class="foot-li">
+                                        <a href="contact.html" class="foot-a fixall">Need Help?</a>
+                                    </li>
+                                    <li class="foot-li">
+                                        <a href="faq.html" class="foot-a fixall">FAQ</a>
+                                    </li>
+                                </ul>
+                                <ul class="foot-ul list-unstyled fixall">
+                                    <li class="foot-li">
+                                        <a href="Terms&Conditions.html" class="foot-a fixall">Terms & Conditions</a>
+                                    </li>
+                                    <li class="foot-li">
+                                        <a href="edit-profile.html" class="foot-a fixall">My Account</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="nav-foot-cont wow fadeInUp" data-wow-delay="0.45s">
+                            <h4 class="footer-head social-foot-header fixall">Follow us</h4>
+                            <div class="nav-foot">
+                                <ul class="social-ul list-unstyled fixall">
+                                    <li class="social-li">
+                                        <a href="#!" class="social-a fixall">
+                                            <i class="fab fa-facebook-f"></i>
+                                            Facebook
+                                        </a>
+                                    </li>
+                                    <li class="social-li">
+                                        <a href="#!" class="social-a fixall">
+                                            <i class="fab fa-twitter"></i>
+                                            Twitter
+                                        </a>
+                                    </li>
+                                    <li class="social-li">
+                                        <a href="#!" class="social-a fixall">
+                                            <i class="fab fa-instagram"></i>
+                                            Instagram
+                                        </a>
+                                    </li>
+                                    <li class="social-li">
+                                        <a href="#!" class="social-a fixall">
+                                            <i class="fab fa-linkedin-in"></i>
+                                            Linkedin
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="last-footer">
+            <div class="container">
+                <div class="copyrights">
+                    <div class="client">
+                        © 2020 <a href="#!">Informatic Development Company (iDev)</a>.<br> ALL RIGHTS RESERVED
+                    </div>
+                    <div class="tasawk">
+                        Made In
+                        <a href="https://tasawk.com.sa/en"><img src="images/tasawk-en.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <div class="Arro-top">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px" height="11px">
+            <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                d="M1.060,10.484 C1.329,10.745 1.766,10.745 2.034,10.484 L10.601,2.139 L19.185,10.484 C19.453,10.745 19.890,10.745 20.159,10.484 C20.427,10.222 20.427,9.798 20.159,9.537 L11.105,0.735 C10.970,0.605 10.803,0.540 10.618,0.540 C10.450,0.540 10.265,0.605 10.131,0.735 L1.077,9.537 C0.791,9.798 0.791,10.222 1.060,10.484 Z" />
+        </svg>
+    </div>
+
+    <script src="js/jquery-2.2.1.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</HTML>

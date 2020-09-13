@@ -7208,7 +7208,7 @@ html[dir='rtl'] .cond a {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  font-size: 14px;
+  font-size: 18px;
   color: #b8b8b8;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
